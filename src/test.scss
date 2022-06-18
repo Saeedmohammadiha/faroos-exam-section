@@ -1,0 +1,187 @@
+ $myColor: #ffc003;
+
+@font-face {
+    font-family: sans;
+    src: url("./font/ir_sans.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    font-family: sans;
+}
+@media (max-width: 780px) {
+    .info {
+        font-size: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .info {
+        font-size: 9px;
+    }
+}
+.answer {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    border-top: 5px solid $myColor;
+    color: white;
+    .custom-shape {
+        width: 40px;
+        height: 40px;
+        background-color: $myColor;
+        transform: rotate(45deg);
+        margin-top: -23px;
+        margin-right: 48%;
+        .inercustom {
+            transform: rotate(-45deg);
+            padding-top: 8px;
+           text-align: center;
+           margin-left: -8px;
+        }
+    }
+    @media (max-width: 768px) {
+        .custom-shape {
+            margin-right: 45%;
+        }
+    }
+    @media (max-width: 380px) {
+        .custom-shape {
+            margin-right: 43%;
+        }
+    }
+    .my-image-container {
+        width: 90%;
+        height: 200px;
+        margin: auto;
+
+        .my-image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media (max-width: 780px) {
+        .my-image-container {
+            height: 150px;
+        }
+    }
+    @media (max-width: 420px) {
+        .my-image-container {
+            height: 110px;
+        }
+    }
+    .options {
+        width: 300px;
+        height: 40px;
+        margin: auto;
+        margin-top: 20px;
+        .testoption {
+            width: 40px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.2s;
+        }
+       
+        .testoption:hover {
+            cursor: pointer;
+            border: 2px solid $myColor;
+        }
+       
+    }
+    @media (max-width: 768px) {
+        .options {
+            width: 150px;
+            height: 20px;
+            .testoption {
+                width: 20px;
+                border-radius: 5px;
+                font-size: 11px;
+                line-height: 23px;
+            }
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    .answer{
+        height: 220px;
+    }
+}
+@media (max-width: 420px) {
+    .answer{
+        height: 200px;
+    }
+}
+.progress-div {
+    width: 700px;
+    height: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 0.5rem;
+
+}
+
+.progress {
+    background-color: $myColor;
+    height: 10px;
+    border-radius: 1rem;
+    transition: 1s ease;
+    transition-delay: 0.5s;
+}
+
+.tabels {
+    height: 150px;
+    overflow-y: scroll;
+    background-color: #b5b6b8;
+
+    table {
+        text-align: center;
+        margin-right: 15px;
+        margin-top: 18px;
+        height: 50px;
+        .table-head{
+            font-size: 11px;
+        }
+        .table-body{
+            font-size: 12px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                color: gray;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .tabels {
+        height: 100px;
+    }
+}
+.myAnswerSelect {
+    width: 15px;
+    height: 10px;
+    background-color: #dadbdd;
+    border-radius: 15px;
+    margin: 1px;
+}
+
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  }
